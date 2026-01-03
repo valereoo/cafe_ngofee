@@ -4,11 +4,7 @@ services:
   app:
     build: .
     ports:
-      - "6730:6730"
-    environment:
-      - PORT=3000
-      - DATABASE_URL=${DATABASE_URL}
-      - JWT_SECRET=${JWT_SECRET}
+      - "6730:3000"
     env_file:
       - .env
     restart: always
